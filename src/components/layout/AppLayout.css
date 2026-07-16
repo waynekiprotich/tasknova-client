@@ -1,0 +1,49 @@
+.layout-root {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-viewport);
+  display: flex;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+}
+
+.layout-container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.layout-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem;
+}
+
+.layout-header-wrapper {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.layout-main-content {
+  flex: 1;
+  position: relative;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.layout-main-content:focus {
+  outline: none;
+}
+
+.layout-page-wrapper {
+  height: 100%;
+}
